@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <main class="Calculator">
+        <div class="display">
+            <div class="expression"></div>
+            <div class="result">0</div>
+        </div>
+
+        <div class="toolbar">
+            <div class="toolbar-left">
+            <button type="button" class="icon-btn" title="History">🕒</button>
+            <button type="button" class="icon-btn" title="Scientific">√π<</button>
+            <button type="button" class="icon-btn" title="EMI">EMI</button>
+            </div>
+            <button type="button" class="icon-btn backspace" title="Delete">⌫</button>
+        </div>
+        
+        <div class="keypad">
+                <!-- Row 1 -->
+            <button type="button"  class="btn clear">C</button>
+            <button type="button" class="btn func">()</button>
+            <button type="button" class="btn func">%</button>
+            <button type="button" class="btn operator" data-op="/">÷</button>
+
+            <!-- Row 2 -->
+       
+            <button type="button"  class="btn number" data-num="7">7</button>
+            <button type="button"  class="btn number" data-num="8">8</button>
+            <button type="button"  class="btn number" data-num="9">9</button>
+            <button type="button"  class="btn operator" data-op="*">×</button>
+
+            <!-- Row 3 -->
+            
+            <button type="button"  class="btn number" data-num="4">4</button>
+            <button type="button"  class="btn number" data-num="5">5</button>
+            <button type="button"  class="btn number" data-num="6">6</button>
+            <button type="button" class="btn operator" data-op="-">-</button>
+
+            <!-- Row 4 -->
+
+            <button type="button"  class="btn number" data-num="1">1</button>
+            <button type="button"  class="btn number" data-num="2">2</button>
+            <button type="button"  class="btn number" data-num="3">3</button>
+            <button type="button"  class="btn operator"    data-op="+">+</button>
+
+            <!-- Row 5 -->
+             <button type="button" class="btn func sign">+/-</button>
+             <button type="button" class="btn number" data-num="0">0</button>
+             <button type="button" class="btn decimal" data-num=".">.</button>
+             <button type="button" class="btn equals">=</button>
+       
+        </div>
+      </main>  
+        <script src="script.js" defer></script>
+</body>
+</html>
